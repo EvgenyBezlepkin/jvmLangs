@@ -1,4 +1,4 @@
-
+package kotlinLang
 
 fun nullable () {
 
@@ -6,11 +6,11 @@ fun nullable () {
 
     // переменные в отношении значения null делятся на два типа:
     // поддерживающие null и неподдерживающие
-    // non-nullable
+    // non-kotlinLang.nullable
     var a: String = ""
-    //a = null
+    //kotlinLang.a = null
 
-    // nullable
+    // kotlinLang.nullable
     var b: String? = ""
     b = null
 
@@ -87,10 +87,10 @@ fun main (args:Array<String>) {
 fun proficiencyCheck(swordsJuggling: Int?) {
 
     // ключевое слово для возбуждения исключения
-    swordsJuggling ?: throw IllegalStateException("Player cannot juggle swords")
+    swordsJuggling ?: throw IllegalStateException("kotlinLang.Player cannot juggle swords")
 
     // второй вариант
-    //swordsJuggling ?: throw UnskilledSwordJugglerException()
+    //swordsJuggling ?: throw kotlinLang.UnskilledSwordJugglerException()
 
 }
 
@@ -98,7 +98,7 @@ fun proficiencyCheck(swordsJuggling: Int?) {
 // объявление пользовательского исключения
 
 class UnskilledSwordJugglerException() :
-        IllegalStateException("Player cannot juggle swords")
+        IllegalStateException("kotlinLang.Player cannot juggle swords")
 
 
 // функции проверки условий

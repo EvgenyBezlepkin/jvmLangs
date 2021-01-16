@@ -1,0 +1,4 @@
+package groovyLang
+
+class Base {
+}

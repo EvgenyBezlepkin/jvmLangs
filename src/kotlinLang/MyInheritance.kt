@@ -1,10 +1,10 @@
-
+package kotlinLang
 
 // Для всех классов в языке Koltin родительским суперклассом является класс Any
 
 // ключевое слово open открывает класс, функции и поля для наследовния
 open class Room() {
-    open var name = "Room"
+    open var name = "kotlinLang.Room"
     fun description() = ": $name"
     open fun load() = "Nothing much to see here..."
     protected open val level = 5
@@ -12,13 +12,13 @@ open class Room() {
 
 
 open class TownSquare() : Room() {
-    override var name = "Town"
+    override var name = "kotlinLang.Town"
     open override fun load() = "The villagers rally and cheer as you enter!"
     override val level = super.level + 1
 }
 
 class Plazza : TownSquare() {
-    override var name = "Plazza"
+    override var name = "kotlinLang.Plazza"
 }
 
 

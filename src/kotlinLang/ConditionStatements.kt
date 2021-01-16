@@ -1,4 +1,4 @@
-// == - сравнение чисел по значению
+package kotlinLang// == - сравнение чисел по значению
 // === - сравнение ссылок
 
 fun main(args: Array<String>) {
@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
             if (healthPoints == 100) {
                 "is in excellent condition!"
             } else if (healthPoints >= 90) {
-                "has a few scratches."
+                "has kotlinLang.a few scratches."
             } else if (healthPoints >= 75) {
                 if (isBlessed) {
                     "has some minor wounds but is healing quite quickly!"
@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
     // По умолчанию условное выражение when действует подобно оператору сравнения ==
     healthStatus = when (healthPoints) {
         100 -> "is in excellent condition!"
-        in 90..99 -> "has a few scratches."
+        in 90..99 -> "has kotlinLang.a few scratches."
         in 75..89 -> if (isBlessed) {
             "has some minor wounds but is healing quite quickly!"
         } else {

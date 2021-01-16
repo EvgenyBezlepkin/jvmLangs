@@ -1,4 +1,4 @@
-package collections
+package kotlinLang.collections
 
 fun main (args: Array<String>){
 
@@ -10,7 +10,7 @@ fun main (args: Array<String>){
     println(a.last())
 
     try {
-        println(a.last { x -> x.contains("a") })
+        println(a.last { x -> x.contains("kotlinLang.a") })
     } catch (e : NoSuchElementException) {
         println(e)
     }

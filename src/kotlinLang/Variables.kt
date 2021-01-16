@@ -1,4 +1,4 @@
-
+package kotlinLang
 // нет примитивных типов - только ссылочные
 
 
@@ -23,6 +23,6 @@ fun main (args: Array<String>) {
 
     // поддержка автоматического изменения типов
     // переменные типа val неизменяемы (read-only)
-    //val a = "Hello";
-    //a = "HelloA"
+    //val kotlinLang.a = "Hello";
+    //kotlinLang.a = "HelloA"
 }

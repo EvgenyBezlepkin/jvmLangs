@@ -1,4 +1,4 @@
-// ТИПЫ ФУНКЦИЙ
+package kotlinLang// ТИПЫ ФУНКЦИЙ
 // 1 локальные функции. Например, функции, вложенные в другие функции
 
 // 2 Функции-элементы - это функции, объявленные внутри классов или объектов
@@ -53,7 +53,7 @@ fun main(args: Array<String>) {
     println(b("Mathue"))
 
     // передача лямбды как параметра в функцию
-    runSimulation({k:String -> "Hello, $k"}, 2)
+    runSimulation({ k: String -> "Hello, $k" }, 2)
 
 
     // передача ссылдки на функцию
@@ -63,12 +63,12 @@ fun main(args: Array<String>) {
 
     // если при вызове функции мы используем именованые аргументы,
     // то можем передавать их не по порядку
-    println(namedArgs(  b = 5,
-                        a = 6))
+    println(namedArgs(b = 5,
+            a = 6))
 
     // вызов с параметрами по умолчанию
     println(namedArgs())
-    //shouldReturnAString()
+    //kotlinLang.shouldReturnAString()
 
 }
 
@@ -88,7 +88,7 @@ fun namedArgs(a: Int = 0, b: Int = 1) = a - b
 
 // функция с заглушкой
 fun shouldReturnAString(): String {
-    TODO("implement the string building functionality here to return a string")
+    TODO("implement the string building functionality here to return kotlinLang.a string")
 }
 
 

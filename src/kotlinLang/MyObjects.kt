@@ -1,4 +1,4 @@
-
+package kotlinLang
 
 // Есть три способа применения ключевого слова object:
 // для создания синглтонов, анонимных объектов и вспомогательных объектов.
@@ -44,11 +44,11 @@ data class Coordinate(val x: Int, val y: Int) {
 
 fun main(args: Array<String>) {
     Game
-    val a : Coordinate = Coordinate(1,2)
-    println(Coordinate(1,0) == Coordinate(1,0))
-    println(Coordinate(1,0) === Coordinate(1,0))
+    val a : Coordinate = Coordinate(1, 2)
+    println(Coordinate(1, 0) == Coordinate(1, 0))
+    println(Coordinate(1, 0) === Coordinate(1, 0))
 
-    println(Coordinate(1,0) + Coordinate(1,0))
+    println(Coordinate(1, 0) + Coordinate(1, 0))
 }
 
 

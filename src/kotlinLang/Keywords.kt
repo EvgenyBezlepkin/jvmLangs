@@ -1,3 +1,5 @@
+package kotlinLang
+
 //vararg
 // позволяет передавать нефиксированное число аргументов для параметра
 // пример
@@ -29,12 +31,12 @@ fun a() {
 // помечает элемент как переопределение элемента суперкласса
 // пример
 open class Ro(val name: String) {
-    fun description() = "Ro: $name"
+    fun description() = "kotlinLang.Ro: $name"
     open fun load() = "Nothing"
     protected open val level = 5
 }
 
-class Town : Ro("Town Square") {
+class Town : Ro("kotlinLang.Town Square") {
     override fun load() = "The"
     override val level = super.level + 1
 }
@@ -78,7 +80,7 @@ data class User2(val name: String, val age: Int)
 data class Point(val x: Int, val y: Int)
 operator fun Point.unaryMinus() = Point(-x, -y)
 val point = Point(10, 20)
-//println(-point)  // выведет "(-10, -20)"
+//println(-kotlinLang.getPoint)  // выведет "(-10, -20)"
 
 
 

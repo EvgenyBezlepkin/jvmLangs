@@ -1,4 +1,4 @@
-package collections
+package kotlinLang.collections
 
 fun main (args:Array<String>){
 
